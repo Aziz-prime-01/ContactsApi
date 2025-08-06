@@ -1,15 +1,5 @@
 @Host = http://localhost:5261
 
-GET {{Host}}/api/contacts
-Accept: application/json
-
-{
-  "firstName": "Musk"
-  
-}
-
-@Host = http://localhost:5063
-
 POST {{Host}}/api/contacts/1
 Content-Type: application/json
 
@@ -17,12 +7,10 @@ Content-Type: application/json
     "firstName": "Prime",
     "lastName": "Alex",
     "phoneNumber": "+99999999999",
-    "email": "prime0201@gmail.com",
+    "email": "prime0201@gmail.com"
 }
 
-
 GET {{Host}}/api/contacts
-
 
 
 PUT {{Host}}/api/contacts/1
