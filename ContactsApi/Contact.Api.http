@@ -1,0 +1,11 @@
+@Host = http://localhost:5261
+
+GET {{Host}}/api/contacts
+Accept: application/json
+
+{
+  "firstName": "Musk"
+  
+}
+
+###
